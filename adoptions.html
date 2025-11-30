@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAHAAYA | Adoption Stories</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="subpage-header">
+      <a href="index.html" class="logo">SAHAAYA</a>
+      <nav class="utility-nav hidden" id="adoptionNav">
+        <a href="#profiles" class="active">Child Profiles</a>
+        <a href="#eligibility">Adoption Eligibility Checker</a>
+        <a href="#tracker">Adoption Process Tracker</a>
+        <a href="#video">Video Call with Orphan</a>
+        <a href="#stories">Success Stories</a>
+        <a href="donations.html">Donations</a>
+      </nav>
+    </header>
+
+    <main>
+      <div id="adoptionAuth">
+        <section class="hero hero--subpage">
+          <div class="hero__content">
+            <p class="eyebrow tagline">a beggining of hope</p>
+            <h1>SAHAAYA</h1>
+            <p class="subtitle">Access your adoption dashboard or join our network before exploring child profiles.</p>
+          </div>
+        </section>
+
+        <section class="auth">
+          <section class="card">
+            <h2>Login</h2>
+            <form class="form" id="loginFormAdoptions">
+              <label>
+                Email
+                <input type="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                Password
+                <input type="password" placeholder="Enter password" required />
+              </label>
+              <button type="submit" class="btn primary">Access Dashboard</button>
+            </form>
+          </section>
+
+          <section class="card">
+            <h2>Sign Up</h2>
+            <form class="form" id="signupFormAdoptions">
+              <label>
+                Full Name
+                <input type="text" placeholder="Aarav Kumar" required />
+              </label>
+              <label>
+                Email
+                <input type="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                Phone
+                <input type="tel" placeholder="+91 90000 00000" required />
+              </label>
+              <label>
+                Password
+                <input type="password" placeholder="Create password" required />
+              </label>
+              <button type="submit" class="btn primary">Join SAHAAYA</button>
+            </form>
+          </section>
+        </section>
+      </div>
+
+      <p class="lock-note" id="lockNote">Please log in or sign up to view adoption tools, profiles, and donation links.</p>
+
+      <div id="adoptionContent" class="hidden">
+      <section class="intro">
+        <h1>Featured Adoption Matches</h1>
+        <p>
+          Every child deserves a home filled with kindness. Browse profiles from verified partner homes and connect
+          with our counselors for the next steps.
+        </p>
+      </section>
+
+      <section class="adoption-grid" id="profiles">
+        <article class="profile-card">
+          <img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=600&q=80" alt="Meera smiling" />
+          <div>
+            <h3>Meera</h3>
+            <p>Responds to music therapy and water play. Flourishes in calm spaces.</p>
+            <ul class="profile-meta">
+              <li><span>Age</span>4 years</li>
+              <li><span>Blood Group</span>B+</li>
+              <li><span>Weight</span>16 kg</li>
+              <li><span>DOB</span>12 Mar 2020</li>
+            </ul>
+            <button class="btn secondary request-btn" data-child="Meera">Request to Meet</button>
+          </div>
+        </article>
+
+        <article class="profile-card">
+          <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=600&q=80" alt="Aanya painting" />
+          <div>
+            <h3>Aanya</h3>
+            <p>Creative soul who loves drawing and tending to the garden patches.</p>
+            <ul class="profile-meta">
+              <li><span>Age</span>6 years</li>
+              <li><span>Blood Group</span>O+</li>
+              <li><span>Weight</span>20 kg</li>
+              <li><span>DOB</span>05 Aug 2018</li>
+            </ul>
+            <button class="btn secondary request-btn" data-child="Aanya">Request to Meet</button>
+          </div>
+        </article>
+
+        <article class="profile-card">
+          <img src="https://images.unsplash.com/photo-1500099817043-86d46000d58f?auto=format&fit=crop&w=600&q=80" alt="Farhan outdoors" />
+          <div>
+            <h3>Farhan</h3>
+            <p>Energetic learner, budding footballer, and curious about science kits.</p>
+            <ul class="profile-meta">
+              <li><span>Age</span>8 years</li>
+              <li><span>Blood Group</span>B-</li>
+              <li><span>Weight</span>24 kg</li>
+              <li><span>DOB</span>19 Nov 2016</li>
+            </ul>
+            <button class="btn secondary request-btn" data-child="Farhan">Request to Meet</button>
+          </div>
+        </article>
+
+        <article class="profile-card">
+          <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=600&q=80" alt="Vihaan smiling" />
+          <div>
+            <h3>Vihaan</h3>
+            <p>Soft-spoken, enjoys puzzle solving and storytelling sessions.</p>
+            <ul class="profile-meta">
+              <li><span>Age</span>7 years</li>
+              <li><span>Blood Group</span>A+</li>
+              <li><span>Weight</span>22 kg</li>
+              <li><span>DOB</span>27 Jan 2017</li>
+            </ul>
+            <button class="btn secondary request-btn" data-child="Vihaan">Request to Meet</button>
+          </div>
+        </article>
+
+        <article class="profile-card">
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80" alt="Kavya playing" />
+          <div>
+            <h3>Kavya</h3>
+            <p>Bubbly and empathetic, leads the morning yoga stretches for her friends.</p>
+            <ul class="profile-meta">
+              <li><span>Age</span>5 years</li>
+              <li><span>Blood Group</span>AB+</li>
+              <li><span>Weight</span>17 kg</li>
+              <li><span>DOB</span>03 Dec 2019</li>
+            </ul>
+            <button class="btn secondary request-btn" data-child="Kavya">Request to Meet</button>
+          </div>
+        </article>
+
+        <article class="profile-card">
+          <img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=600&q=80" alt="Arjun playing cricket" />
+          <div>
+            <h3>Arjun</h3>
+            <p>Cricket fanatic and budding coder who loves working on robotics kits.</p>
+            <ul class="profile-meta">
+              <li><span>Age</span>9 years</li>
+              <li><span>Blood Group</span>O-</li>
+              <li><span>Weight</span>26 kg</li>
+              <li><span>DOB</span>21 May 2015</li>
+            </ul>
+            <button class="btn secondary request-btn" data-child="Arjun">Request to Meet</button>
+          </div>
+        </article>
+
+        <article class="profile-card">
+          <img src="https://images.unsplash.com/photo-1502767089025-6572583495b0?auto=format&fit=crop&w=600&q=80" alt="Isha reading" />
+          <div>
+            <h3>Isha</h3>
+            <p>Calm reader who narrates stories to the younger children every evening.</p>
+            <ul class="profile-meta">
+              <li><span>Age</span>6 years</li>
+              <li><span>Blood Group</span>B+</li>
+              <li><span>Weight</span>19 kg</li>
+              <li><span>DOB</span>10 Feb 2018</li>
+            </ul>
+            <button class="btn secondary request-btn" data-child="Isha">Request to Meet</button>
+          </div>
+        </article>
+
+        <article class="profile-card">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80" alt="Dev smiling" />
+          <div>
+            <h3>Dev</h3>
+            <p>Strategic thinker who loves chess clubs and mentoring younger children.</p>
+            <ul class="profile-meta">
+              <li><span>Age</span>10 years</li>
+              <li><span>Blood Group</span>A-</li>
+              <li><span>Weight</span>28 kg</li>
+              <li><span>DOB</span>09 Sep 2014</li>
+            </ul>
+            <button class="btn secondary request-btn" data-child="Dev">Request to Meet</button>
+          </div>
+        </article>
+
+        <article class="profile-card">
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80" alt="Riya dancing" />
+          <div>
+            <h3>Riya</h3>
+            <p>Classical dance enthusiast who brings joy during cultural evenings.</p>
+            <ul class="profile-meta">
+              <li><span>Age</span>4 years</li>
+              <li><span>Blood Group</span>O+</li>
+              <li><span>Weight</span>15 kg</li>
+              <li><span>DOB</span>30 Jun 2020</li>
+            </ul>
+            <button class="btn secondary request-btn" data-child="Riya">Request to Meet</button>
+          </div>
+        </article>
+      </section>
+      <p class="request-note hidden" id="requestNote">Request recorded.</p>
+
+      <section class="tool-section" id="eligibility">
+        <div class="tool-card">
+          <h2>Adoption Eligibility Checker</h2>
+          <p>Answer a quick set of questions to confirm if you meet the baseline criteria set by CARA and partner homes.</p>
+          <form class="form compact-form">
+            <label>
+              Marital Status
+              <select>
+                <option>Married</option>
+                <option>Single</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>
+              Combined Annual Income (INR)
+              <input type="number" placeholder="e.g., 9,00,000" />
+            </label>
+            <label>
+              Age of Prospective Parents
+              <input type="number" placeholder="e.g., 34" />
+            </label>
+            <button type="button" class="btn primary">Check Eligibility</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="tool-section" id="tracker">
+        <div class="tool-card">
+          <h2>Adoption Process Tracker</h2>
+          <ol class="tracker-list">
+            <li><span>01</span> Register with SAHAAYA & CARINGS portal.</li>
+            <li><span>02</span> Home Study conducted by certified social worker.</li>
+            <li><span>03</span> Matchmaking & child referral shared with you.</li>
+            <li><span>04</span> Pre-adoption foster care and bonding period.</li>
+            <li><span>05</span> Court petition & final adoption order completion.</li>
+          </ol>
+          <button class="btn outline">Download Full Checklist</button>
+        </div>
+      </section>
+
+      <section class="tool-section" id="video">
+        <div class="tool-card duo">
+          <div>
+            <h2>Video Call with Orphan</h2>
+            <p>Schedule a secure video call facilitated by our counselors to interact with a child once your request is approved.</p>
+            <ul class="bullet-list">
+              <li>Available in 8 Indian languages</li>
+              <li>25-minute moderated sessions</li>
+              <li>Consent-driven and recorded for safety</li>
+            </ul>
+            <button class="btn secondary">Book a Slot</button>
+          </div>
+          <div class="video-preview">
+            <p>Next available window</p>
+            <h3>Saturday, 4:30 PM IST</h3>
+            <p>Slots left: <strong>05</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="tool-section" id="stories">
+        <div class="tool-card">
+          <h2>Success Story Highlights</h2>
+          <div class="story-grid">
+            <article>
+              <h3>Anika & Meera</h3>
+              <p>“Within six months of applying through SAHAAYA we welcomed Meera home. The counseling team prepared us for every milestone.”</p>
+              <span>Hyderabad · Adopted 2023</span>
+            </article>
+            <article>
+              <h3>The Narayanans</h3>
+              <p>“Process tracker updates and weekend video calls helped our family bond with Farhan before he travelled to Kochi.”</p>
+              <span>Kochi · Adopted 2022</span>
+            </article>
+            <article>
+              <h3>Sameer & Dev</h3>
+              <p>“The eligibility checker clarified documents we needed ahead of time. Court petition closed in record 45 days.”</p>
+              <span>Pune · Adopted 2024</span>
+            </article>
+          </div>
+        </div>
+      </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>Questions? Reach our adoption desk at <a href="tel:+919999000000">+91 99990 00000</a>.</p>
+    </footer>
+    <script>
+      const adoptionNav = document.getElementById("adoptionNav");
+      const adoptionContent = document.getElementById("adoptionContent");
+      const lockNote = document.getElementById("lockNote");
+      const adoptionAuth = document.getElementById("adoptionAuth");
+
+      const unlockAdoptionContent = () => {
+        adoptionNav?.classList.remove("hidden");
+        adoptionContent?.classList.remove("hidden");
+        lockNote?.classList.add("hidden");
+        adoptionAuth?.classList.add("hidden");
+      };
+
+      const loginForm = document.getElementById("loginFormAdoptions");
+      loginForm?.addEventListener("submit", (ev) => {
+        ev.preventDefault();
+        const email = loginForm.querySelector('input[type="email"]')?.value.trim();
+        const password = loginForm.querySelector('input[type="password"]')?.value.trim();
+        if (!email || !password) {
+          alert("Please provide both email and password to continue.");
+          return;
+        }
+        alert("Login successful. Continue exploring adoptions below.");
+        loginForm.reset();
+        unlockAdoptionContent();
+      });
+
+      const signupForm = document.getElementById("signupFormAdoptions");
+      signupForm?.addEventListener("submit", (ev) => {
+        ev.preventDefault();
+        const requiredInputs = signupForm.querySelectorAll("input[required]");
+        const emptyField = Array.from(requiredInputs).find((input) => !input.value.trim());
+        if (emptyField) {
+          alert("Kindly complete all sign-up fields.");
+          emptyField.focus();
+          return;
+        }
+        alert("Sign up successful. Welcome to SAHAAYA.");
+        signupForm.reset();
+        unlockAdoptionContent();
+      });
+
+      const requestNote = document.getElementById("requestNote");
+      document.querySelectorAll(".request-btn").forEach((btn) =>
+        btn.addEventListener("click", () => {
+          if (!requestNote) return;
+          const name = btn.dataset.child || "the selected child";
+          requestNote.textContent = `Request submitted for ${name}. Our counselors will reach you within 24 hours.`;
+          requestNote.classList.remove("hidden");
+          requestNote.scrollIntoView({ behavior: "smooth", block: "center" });
+        })
+      );
+
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("access") === "adoption") {
+        unlockAdoptionContent();
+      }
+    </script>
+  </body>
+</html>
+
