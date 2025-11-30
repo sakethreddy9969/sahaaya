@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAHAAYA | Login & Sign Up</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="eyebrow tagline">a beggining of hope</p>
+        <h1>SAHAAYA</h1>
+        <p class="subtitle">
+          Connect with shelters, support adoptions, and channel donations where they matter the most.
+        </p>
+        <nav class="hero__actions">
+          <a href="#authSection" class="btn secondary">Explore Adoptions</a>
+          <a href="#authSection" class="btn outline">Make a Donation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="auth" id="authSection">
+      <section class="card">
+        <h2>Login</h2>
+        <form class="form" id="loginForm">
+          <label>
+            Email
+            <input type="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Password
+            <input type="password" placeholder="Enter password" required />
+          </label>
+          <button type="submit" class="btn primary">Access Dashboard</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Sign Up</h2>
+        <form class="form" id="signupForm">
+          <label>
+            Full Name
+            <input type="text" placeholder="Aarav Kumar" required />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Phone
+            <input type="tel" placeholder="+91 90000 00000" required />
+          </label>
+          <label>
+            Password
+            <input type="password" placeholder="Create password" required />
+          </label>
+          <button type="submit" class="btn primary">Join SAHAAYA</button>
+        </form>
+      </section>
+    </main>
+
+    <section class="card dashboard hidden" id="dashboardPanel">
+      <div class="dashboard__header">
+        <div>
+          <p class="eyebrow">Choose Your Path</p>
+          <h2>How would you like to help today?</h2>
+          <p id="dashboardMessage" class="subtitle">Select an option below to continue.</p>
+        </div>
+        <div class="choice-buttons">
+          <button class="btn secondary" id="adoptionChoice">Explore Adoptions</button>
+          <button class="btn outline" id="donationChoice">Support via Donation</button>
+        </div>
+      </div>
+
+
+      <form class="form donation-form hidden" id="donationFlow">
+        <h3>Donation Details</h3>
+        <p class="bill-note">SAHAAYA issues a transparent bill with no GST or additional taxes.</p>
+        <label>
+          Amount (INR)
+          <input type="number" min="100" placeholder="e.g., 2500" required />
+        </label>
+        <label>
+          Occasion
+          <input type="text" placeholder="Birthday, Anniversary, Festival..." required />
+        </label>
+        <label>
+          Purpose
+          <textarea rows="3" placeholder="Education, Health, Emergency Relief..." required></textarea>
+        </label>
+        <div class="bill-summary hidden" id="billSummary">
+          <h4>Final Bill</h4>
+          <p>Donation Amount: ₹<span id="billAmount">0</span></p>
+          <p>Total to Pay: ₹<span id="billTotal">0</span> (No GST applied)</p>
+        </div>
+        <fieldset class="payment-options">
+          <legend>Preferred Payment Mode</legend>
+          <label><input type="radio" name="paymentMethod" value="Cash on Delivery" required /> Cash on Delivery</label>
+          <label><input type="radio" name="paymentMethod" value="Google Pay" /> Google Pay</label>
+          <label><input type="radio" name="paymentMethod" value="PhonePe" /> PhonePe</label>
+          <label><input type="radio" name="paymentMethod" value="Credit Card" /> Credit Card</label>
+        </fieldset>
+        <div class="upload-field hidden" id="screenshotField">
+          <label>
+            Upload Payment Screenshot
+            <input type="file" accept="image/*" />
+          </label>
+          <p>Please share the confirmation screenshot for Google Pay or PhonePe donations.</p>
+        </div>
+        <button type="submit" class="btn primary">Confirm Donation</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> SAHAAYA · Compassion in action for orphans</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
+
