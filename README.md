@@ -125,8 +125,8 @@ This project is licensed under the MIT License.
 
 Avula Saketh Reddy
 
-GitHub: https://github.com/your-username
-LinkedIn: https://linkedin.com/in/your-profile
+GitHub: https://github.com/saketh9969
+
 ⭐ Support
 
 If you found this project helpful, consider giving it a ⭐ Star on GitHub. It motivates further development and helps others discover the project.
